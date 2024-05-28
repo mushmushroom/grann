@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grann | Авторські десерти</title>
+
+  <!--  FAVICON -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="preloader-wrapper">
+  <div class="preloader">
+    <svg class="tea" width="77" height="88" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+        stroke="#705A66" stroke-width="2"></path>
+      <path
+        d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+        stroke="#705A66" stroke-width="2"></path>
+      <path id="teabag" fill="#705A66" fill-rule="evenodd" clip-rule="evenodd"
+        d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
+      </path>
+      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" stroke="#705A66"></path>
+      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="#705A66" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </div>
+</div>
+  <main>
+
+    <header class="header ">
+
+  <div class="container">
+    <div class="header__inner">
+      <div class="mobile-menu">
+        <img data-da=".mobile-menu,768,last" class="mobile-menu__img" src="images/mobile-img.png" alt="торт">
+      </div>
+
+      <div class="header__menu menu menu--left" data-da=".mobile-menu,768,0">
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" data-goto=".info__about" href="index.html#about">Про мене</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.png" alt="лого" width="141" height="91">
+      </a>
+
+      <div class="header__menu menu menu--right" data-da=".mobile-menu,768,1">
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" data-goto=".info__top" href="index.html#delivery">Доставка</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" data-goto=".footer" href="index.html#contact">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="header__cart" type="button" data-da=".header__inner,768,last">
+          <span class="header__cart-number">1</span>
+          <span class="sr-only">Перейти в корзину</span>
+          <img src="images/cart.svg" alt="іконка корзини" width="25" height="25">
+        </button>
+      </div>
+
+
+
+      <button type="button" class="menu__icon icon-menu">
+        <span></span>
+        <span class="sr-only">Відкрити меню</span>
+      </button>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</header>
+<div class="cart-popup">
+  <button class="cross-btn cart-popup__close">
+    <span></span>
+  </button>
+  <div class="cart-popup__top">Ваше замовлення:</div>
+  <button class="cart-popup__close">
+    <span class="sr-only">Закрити</span>
+  </button>
+  <div class="cart-popup__inner">
+    <ul class="cart-popup__item-list">
+      <li class="cart-popup__item">
+        <button class="remove-btn cart-popup__remove">
+          <span class="sr-only">Видалити з кошика</span>
+        </button>
+        <img class="cart-popup__img" src="images/product/9.jpeg" alt="Наполеон" width="286" height="300">
+        <div class="cart-popup__content-box">
+          <div class="cart-popup__name">Торт “Наполеон</div>
+          <ul class="cart-popup__list">
+            <li>
+              <span>Вид:</span>
+              <span>Карамельний наполеон</span>
+            </li>
+            <li>
+              <span>Декор:</span>
+              <span>Без декору</span>
+            </li>
+            <li>
+              <span>Вага:</span>
+              <span>1 кг</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="cart-popup__item">
+        <button class="remove-btn cart-popup__remove">
+          <span class="sr-only">Видалити з кошика</span>
+        </button>
+        <img class="cart-popup__img" src="images/product/9.jpeg" alt="Наполеон" width="286" height="300">
+        <div class="cart-popup__content-box">
+          <div class="cart-popup__name">Торт “Наполеон”</div>
+          <ul class="cart-popup__list">
+            <li>
+              <span>Вид:</span>
+              <span>Карамельний наполеон</span>
+            </li>
+            <li>
+              <span>Декор:</span>
+              <span>Без декору</span>
+            </li>
+            <li>
+              <span>Вага:</span>
+              <span>1 кг</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+    <div class="cart-popup__box">
+      <div class="cart-popup__box-title">Ваше замовлення:</div>
+      <div class="cart-popup__order-price">
+        Сума замовлення:
+        <span>750 грн</span>
+      </div>
+      <div class="cart-popup__general">
+        Загальна сума:
+        <span>750 грн</span>
+      </div>
+      <a class="cart-popup__btn btn btn--dark" href="order.html">
+        <span>Оформити</span>
+      </a>
+    </div>
+  </div>
+</div>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <h1 class="hero__title title">Авторські десерти </h1>
+
+          <div class="hero__content">
+
+            <div class="hero__box hero__box--left">
+              <span class="hero__box-text">заварні<br>шу</span>
+              <div class="hero__img-box">
+                <img class="hero__img" src="images/hero/hero2.png" alt="Шу" width="117" height="90">
+                <div class="hero__decor">
+                  <img class="hero__img-decor" src="images/hero/decor2.svg" alt="Елемент декору" width="17" height="26">
+                  <img class="hero__img-decor" src="images/hero/decor2-1.svg" alt="Елемент декору" width="62"
+                    height="20">
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__box hero__box--main">
+              <img class="hero__img-main" src="images/hero/hero1.png" alt="Віничок для збиваня">
+              <div class="hero__decor">
+                <img class="hero__img-decor" src="images/hero/decor1.svg" alt="Елемент декору">
+                <img class="hero__img-decor" src="images/hero/decor1-1.svg" alt="Елемент декору">
+              </div>
+            </div>
+
+            <div class="hero__box hero__box--right">
+              <span class="hero__box-text">апетитні<br>тарти</span>
+              <div class="hero__img-box">
+                <img class="hero__img" src="images/hero/hero3.png" alt="Тарт" width="225" height="186">
+                <div class="hero__decor">
+                  <img class="hero__img-decor" src="images/hero/decor3.svg" alt="Елемент декору" width="25" height="25">
+                  <img class="hero__img-decor" src="images/hero/decor3-1.svg" alt="Елемент декору" width="9"
+                    height="32">
+                  <img class="hero__img-decor" src="images/hero/decor3-2.svg" alt="Елемент декору" width="20"
+                    height="60">
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__box hero__box--bottom">
+              <span class="hero__box-text">мусові торти</span>
+              <div class="hero__img-box">
+                <img class="hero__img" src="images/hero/hero4.png" alt="Торт" width="373" height="478">
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="hero__body">
+            <div class="hero__text">
+              <p>Виготовляємо десерти під замовлення з любов’ю та користю</p>
+            </div>
+
+            <ul class="hero__list">
+              <li class="hero_item">
+                <a class="hero__link" href="#" target="_blank">
+                  <img src="images/telegram.svg" width="24" height="24" alt="Telegram">
+                  <span class="sr-only">Telegram</span>
+                </a>
+              </li>
+              <li class="hero_item">
+                <a class="hero__link" href="https://www.facebook.com/profile.php?id=100063684152685" target="_blank">
+                  <img src="images/facebook.svg" width="24" height="24" alt="Facebook">
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li class="hero_item">
+                <a class="hero__link" href="https://www.instagram.com/grann.ua/" target="_blank">
+                  <img src="images/instagram.svg" width="24" height="24" alt="Instagram">
+                  <span class="sr-only">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h2 class="sr-only">Категорії</h2>
+        <div class="categories__inner">
+          <a class="categories__btn" href="#" style="background-image: url('images/product/1.jpeg');">
+            <span class="btn categories__name">
+              <span>Торти</span>
+            </span>
+          </a>
+          <a class="categories__btn" href="#" style="background-image: url('images/product/5.jpeg');">
+            <span class="btn categories__name">
+              <span>Шу</span>
+            </span>
+          </a>
+          <a class="categories__btn" href="#" style="background-image: url('images/product/3.jpeg');">
+            <span class="btn categories__name">
+              <span>Тістечка</span>
+            </span>
+          </a>
+          <a class="categories__btn" href="#" style="background-image: url('images/product/4.jpeg');">
+            <span class="btn categories__name">
+              <span>Піца</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bestsellers">
+      <div class="container">
+        <h2 class="title bestsellers__title">Бестселлери</h2>
+        <ul class="bestsellers__slider">
+          <li class="bestsellers__slide">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/6.jpeg alt="Мусовий торт “Манго-маракуйя”">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Мусовий торт “Манго-маракуйя”</a>
+        </h3>
+        <div class="item-card__price">1200 грн/ 3 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="bestsellers__slide">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/8.jpeg alt="Шоколадне тістечко брауні">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Шоколадне тістечко брауні</a>
+        </h3>
+        <div class="item-card__price">300 грн/ 3шт</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+
+          <li class="bestsellers__slide">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/2.jpeg alt="Тістечка Шу">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Тістечка Шу</a>
+        </h3>
+        <div class="item-card__price">400 грн/ 6 шт</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+
+          <li class="bestsellers__slide">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/8.jpeg alt="Шоколадне тістечко брауні">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Шоколадне тістечко брауні</a>
+        </h3>
+        <div class="item-card__price">300 грн/ 3шт</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+
+        </ul>
+
+        <a class="btn bestsellers__more" href="catalog.html">
+          <span>Переглянути весь асортимент</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <h2 class="title advantages__title">Чому саме Grann?</h2>
+        <div class="advantages__inner">
+          <div class="advantages__box advantages__box--left">
+            <h3 class="advantages__box-title">Всі інгредиєнти свіжі та якісні!</h3>
+            <div class="advantages__text">
+              <p>
+                Я замовляю продукти тільки у тих постачальників, які мають сертифікати якості.
+              </p>
+            </div>
+          </div>
+
+          <div class="advantages__box advantages__box--img">
+            <img class="advantages__img" src="images/advantages-img.png" alt="cake" width="334" height="258">
+          </div>
+
+          <div class="advantages__box advantages__box--right">
+            <h3 class="advantages__box-title">Можливість замовити десерт згідно ваших бажань</h3>
+            <div class="advantages__text">
+              <p>
+                Якщо з якихось причин ви не вживаєте окремі продукти десерту, є можливість зробити замовлення згідно
+                ваших побажаннь.
+              </p>
+            </div>
+          </div>
+
+          <div class="advantages__box advantages__box--bottom">
+            <h3 class="advantages__box-title">Зручна вага торту</h3>
+            <div class="advantages__text">
+              <p>
+                Не обов'язково чекати на свято, щоб замовити смачненьке. Наша кондитерська робить мініторти і десерти.
+              </p>
+              <p>
+                Мінімальна вага замовлення:Наполеон і медовик - від 0,5 кг. Мусові торти - від 0,8 кг.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner" style="background-image:url('images/banner/banner-img.jpeg');">
+      <h2 class="sr-only">From Grann with love</h2>
+      <img class="banner__text-img" src="images/banner/banner-text.svg" alt="text">
+    </section>
+
+    <section class="info">
+      <div id="delivery" class="info__top">
+        <div class="container">
+          <h2 class="title info__title">Доставка і оплата</h2>
+          <ul class="info__list">
+            <li class="info__item">
+              <img class="info__img" src="images/info/shipping.svg" alt="package" width="86" height="86">
+              <h4 class="info__item-title">Самовивіз</h4>
+              <div class="info__item-text">
+                <p>
+                  Самовивіз з Печерського р-ну, м. Київ
+                </p>
+              </div>
+            </li>
+
+            <li class="info__item">
+              <img class="info__img" src="images/info/delivery.svg" alt="package" width="86" height="86">
+              <h4 class="info__item-title">Доставка</h4>
+              <div class="info__item-text">
+                <p>
+                  Доставка на таксі (за тарифами служби таксі)
+                </p>
+              </div>
+            </li>
+
+            <li class="info__item">
+              <img class="info__img" src="images/info/payment.svg" alt="package" width="86" height="86">
+              <h4 class="info__item-title">Передплата</h4>
+              <div class="info__item-text">
+                <p>
+                  Передплата на картку в розмірі 50% від суми замовлення
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="about-navigation">
+        <div id="about" class="info__about">
+          <div class="container">
+            <div class="info__about-inner">
+              <img class="info__about-img" src="images/about-img.jpeg" alt="Anna Kostroma" width="499" height="749">
+              <div class="info__about-box">
+                <div class="info__about-inscription">
+                  <svg width="253" height="151" viewBox="0 0 253 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M118.376 6.56927C117.454 0.115045 114.578 1.40414 110.309 4.88502C97.2885 15.5021 89.5044 30.5653 81.3226 44.9524C70.5823 63.8384 61.6166 83.6128 51.3606 102.749C44.1778 116.151 35.4576 131.545 22.1965 139.891C14.467 144.756 4.74133 142.488 2.60602 132.711C-0.140612 120.134 6.86231 107.749 15.2822 99.0257C27.5599 86.3051 42.3026 81.674 58.7181 76.5986C64.0489 74.9505 71.279 73.6114 75.2947 69.5957"
+                      stroke="#705A66" stroke-width="3" stroke-linecap="round" id="a1" />
+                    <path
+                      d="M99.2289 25.7168C96.9521 26.286 93.9689 32.0676 93.0238 33.6062C86.2541 44.6265 81.1365 56.8562 76.0483 68.7095C65.2558 93.8512 56.7615 119.754 49.7651 146.185"
+                      stroke="#705A66" stroke-width="3" stroke-linecap="round" id="a2" />
+                    <path
+                      d="M76.0925 114.273C94.8714 103.374 112.718 89.6972 127.95 74.1609C132.165 69.8608 142.487 60.9757 142.487 54.1715C142.487 47.2671 128.261 59.8892 127.772 60.3323C109.083 77.2912 91.6879 98.9492 84.5138 123.58C83.8854 125.738 81.6898 135.091 87.1731 131.558C92.6681 128.018 97.4475 121.843 100.47 116.134C106.386 104.96 92.019 112.086 88.2812 115.824C86.9646 117.14 84.6527 120.251 86.9958 121.896C90.4294 124.307 96.7675 120.719 99.805 119.325C106.521 116.244 113.332 113.262 119.883 109.84C121.833 108.822 126.846 104.947 125.778 106.871C124.287 109.555 118.497 117.827 125.734 117.198C129.834 116.841 133.696 113.876 137.124 111.879C140.074 110.162 147.324 107.265 147.806 103.103C148.771 94.7816 131.594 102.028 129.457 104.699C127.84 106.72 127.437 109.717 129.767 111.347C133.242 113.78 138.324 111.64 141.778 110.284C147.099 108.195 152.108 105.321 157.247 102.837C159.545 101.727 163.505 99.2014 166.067 101.065C168.743 103.011 164.456 108.845 169.613 107.536C173.285 106.603 177.197 104.785 180.516 103.015C181.511 102.484 186.802 97.926 188.051 98.4939C188.78 98.8254 187.007 99.9168 187.12 100.71C187.44 102.951 191.827 101.718 193.015 101.33C204.949 97.4391 214.416 84.3892 222.09 75.1803"
+                      stroke="#705A66" stroke-width="3" stroke-linecap="round" id="bout" />
+                    <path
+                      d="M232.462 58.4264C232.102 56.8055 217.498 75.064 215.93 77.7066C209.43 88.6575 203.964 100.19 198.954 111.879"
+                      stroke="#705A66" stroke-width="3" stroke-linecap="round" id="t1" />
+                    <path d="M202.943 71.1914C217.337 73.1008 231.677 75.3475 246.024 77.5738" stroke="#705A66"
+                      stroke-width="3" stroke-linecap="round" id="t2" />
+                    <path
+                      d="M155.075 135.016C158.635 129.514 158.77 138.166 158.621 140.556C158.471 142.952 157.381 146.308 157.823 148.667C158.15 150.414 164.4 143.92 164.649 143.614C167.8 139.746 170.502 135.135 174.931 132.534C177.162 131.223 177.103 134.014 177.502 135.459C179.802 143.796 189.843 139.264 194.478 135.725C196.54 134.15 202.907 125.241 204.361 130.052C206.922 138.521 218.588 132.831 222.356 128.633C230.053 120.059 217.326 116.872 216.594 124.644C215.368 137.674 248.178 125.473 253.205 123.847"
+                      stroke="#705A66" stroke-width="3" stroke-linecap="round" id="me" />
+                  </svg>
+                </div>
+
+
+                <div class="info__about-content">
+                  <div class="info__about-wrapper">
+                    <div class="info__about-name">Анна Кострома</div>
+                    <div class="info__about-title">Засновниця кондитерської Grann Pastry</div>
+                  </div>
+                  <div class="info__about-text">
+                    <p>
+                      Від хобі до власної справи.
+                    </p>
+                    <p>
+                      Я закінчила DGF International Culinary School в Києві, а згодом навчалася в одній з найвідоміших
+                      шкіл
+                      готельного сервісу і кулінарії в світі «Le Cordon Bleu» (Франція).Свою справу почала після того,
+                      як
+                      здобула досвід і працювала в одному з найбільших кондитерських цехів Грузії (1500 кв.м.).
+                    </p>
+                    <p>
+                      Наразі започаткувала особистий бренд і будую власний кондитерський цех.Моя робота мене надихає.
+                      Завдяки моїм солодощам, я можу дарувати щасливі моменти для вас!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2 class="sr-only">Контактна форма</h2>
+        <div class="contact__inner">
+          <div class="contact__box">
+            <div class="contact__moto">
+              Давайте зробимо щось унікальне разом!
+            </div>
+            <div class="contact__text">
+              <p>Ви можете замовити свій власний рецепт десерту, який вам буде до вподоби. Заповніть заявку та я
+                зв’яжусь з вами, аби обговорити деталі замовлення.</p>
+            </div>
+          </div>
+          <form class="contact__form" action="#">
+            <label class="contact__label sr-only" for="contact-name">Ім’я</label>
+            <input class="contact__field contact__input" type="text" placeholder="Ім’я" name="[contact]name"
+              id="contact-name">
+
+            <label class="contact__label sr-only" for="contact-phone">Номер телефону</label>
+            <input class="contact__field contact__input" type="tel" placeholder="Номер телефону" name="[contact]phone"
+              id="contact-phone" required>
+
+            <label class="contact__label sr-only" for="contact-message">Опишіть ваші побажання</label>
+            <textarea class="contact__field contact__textarea" name="[contact]message" id="contact-message"
+              placeholder="Опишіть ваші побажання:" required></textarea>
+
+            <button class="btn contact__btn" type="submit">
+              <span>Надіслати</span>
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2 class="title faq__title">Популярні запитання</h2>
+        <div data-spollers="" data-one-spoller class="spollers">
+          <div class="spollers__item faq__item">
+            <button type="button" data-spoller class="spollers__title faq__item-title">Скільки часу потрібно для
+              виготовлення замовлення?</button>
+            <div class="spollers__body faq__body">
+              <p>Замовлення необхідно зробити як мінімум за 3-4 дні до вашого свята.</p>
+            </div>
+          </div>
+
+          <div class="spollers__item faq__item">
+            <button type="button" data-spoller class="spollers__title faq__item-title">Чи є вас доставка?</button>
+            <div class="spollers__body faq__body">
+              <p>Так, ми пропонуємо два варіанти отримання продукції: самовивіз з нашого магазину в Києві або доставку
+                за допомогою таксі по тарифам таксі в межах міста. </p>
+              <p>
+                Оберіть той, що найбільше підходить вам, та
+                зв'яжіться з нашою службою підтримки клієнтів для уточнення деталей та оформлення замовлення.
+              </p>
+            </div>
+          </div>
+
+          <div class="spollers__item faq__item">
+            <button type="button" data-spoller class="spollers__title faq__item-title">Чи готуєту ви торти з
+              мастики?</button>
+            <div class="spollers__body faq__body">
+              <p>Так, ми готуємо торти з мастикою. Наші майстри кондитерського мистецтва з радістю втілюють ваші ідеї у
+                життя, створюючи унікальні та смачні торти з мастикою.</p>
+            </div>
+          </div>
+
+          <div class="spollers__item faq__item">
+            <button type="button" data-spoller class="spollers__title faq__item-title">Чи можна їсти ваші торти дітям на
+              вагітним?</button>
+            <div class="spollers__body faq__body">
+              <p>Наші торти виготовляються з високоякісних інгредієнтів та відповідають вимогам безпеки і якості. Вони
+                можуть бути споживані людьми будь-якого віку, включаючи дітей та вагітних жінок. Все залежить від вашого
+                особистого вибору та смакових уподобань.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <h2 class="title gallery__title">Instagram</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <img class="gallery__img" src="images/gallery/1.jpg" alt="image">
+          </li>
+
+          <li class="gallery__item">
+            <img class="gallery__img" src="images/gallery/2.jpg" alt="image">
+          </li>
+
+          <li class="gallery__item">
+            <img class="gallery__img" src="images/gallery/3.jpeg" alt="image">
+          </li>
+
+          <li class="gallery__item">
+            <img class="gallery__img" src="images/gallery/4.jpeg" alt="image">
+          </li>
+
+          <li class="gallery__item">
+            <img class="gallery__img" src="images/gallery/5.jpeg" alt="image">
+          </li>
+
+          <li class="gallery__item">
+            <img class="gallery__img" src="images/gallery/6.jpeg" alt="image">
+          </li>
+        </ul>
+        <a class="btn gallery__btn" href="https://www.instagram.com/grann.ua/" target="_blank">
+          <span>Завітати на сторінку</span>
+        </a>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer id="contact" class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <div class="footer__info-item">с. Хотів, вул. Партизанська 1А</div>
+        <div class="footer__info-item">Email: <a class="footer__info-link"
+            href="mailto:kostromaganna@gmail.com">kostromaganna@gmail.com</a>
+        </div>
+        <div class="footer__info-item">Tel: <a class="footer__info-link" href="tel:380999876240">+38(099) 987 62 40</a>
+        </div>
+      </div>
+
+      <a class="logo footer__logo" href="#">
+        <img class="logo__img" src="images/logo.png" alt="Лого" width="255" height="201">
+      </a>
+
+      <div class="footer__box">
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com/grann.ua/" target="_blank">
+              <img src="images/social/instagram.svg" alt="instagram" width="34" height="34">
+              <span class="sr-only">Instagram</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank">
+              <img src="images/social/telegram.svg" alt="Telegram" width="34" height="34">
+              <span class="sr-only">Telegram</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank">
+              <img src="images/social/viber.svg" alt="Viber" width="34" height="34">
+              <span class="sr-only">Viber</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Політика конфіденційності</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Договір оферти</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

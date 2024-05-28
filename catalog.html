@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог | Grann</title>
+
+  <!--  FAVICON -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="preloader-wrapper">
+  <div class="preloader">
+    <svg class="tea" width="77" height="88" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+        stroke="#705A66" stroke-width="2"></path>
+      <path
+        d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+        stroke="#705A66" stroke-width="2"></path>
+      <path id="teabag" fill="#705A66" fill-rule="evenodd" clip-rule="evenodd"
+        d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
+      </path>
+      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" stroke="#705A66"></path>
+      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="#705A66" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </div>
+</div>
+  <main>
+
+    <header class="header  header--white ">
+
+  <div class="container">
+    <div class="header__inner">
+      <div class="mobile-menu">
+        <img data-da=".mobile-menu,768,last" class="mobile-menu__img" src="images/mobile-img.png" alt="торт">
+      </div>
+
+      <div class="header__menu menu menu--left" data-da=".mobile-menu,768,0">
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" data-goto=".info__about" href="index.html#about">Про мене</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="images/logo.png" alt="лого" width="141" height="91">
+      </a>
+
+      <div class="header__menu menu menu--right" data-da=".mobile-menu,768,1">
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" data-goto=".info__top" href="index.html#delivery">Доставка</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" data-goto=".footer" href="index.html#contact">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="header__cart" type="button" data-da=".header__inner,768,last">
+          <span class="header__cart-number">1</span>
+          <span class="sr-only">Перейти в корзину</span>
+          <img src="images/cart.svg" alt="іконка корзини" width="25" height="25">
+        </button>
+      </div>
+
+
+
+      <button type="button" class="menu__icon icon-menu">
+        <span></span>
+        <span class="sr-only">Відкрити меню</span>
+      </button>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</header>
+<div class="cart-popup">
+  <button class="cross-btn cart-popup__close">
+    <span></span>
+  </button>
+  <div class="cart-popup__top">Ваше замовлення:</div>
+  <button class="cart-popup__close">
+    <span class="sr-only">Закрити</span>
+  </button>
+  <div class="cart-popup__inner">
+    <ul class="cart-popup__item-list">
+      <li class="cart-popup__item">
+        <button class="remove-btn cart-popup__remove">
+          <span class="sr-only">Видалити з кошика</span>
+        </button>
+        <img class="cart-popup__img" src="images/product/9.jpeg" alt="Наполеон" width="286" height="300">
+        <div class="cart-popup__content-box">
+          <div class="cart-popup__name">Торт “Наполеон</div>
+          <ul class="cart-popup__list">
+            <li>
+              <span>Вид:</span>
+              <span>Карамельний наполеон</span>
+            </li>
+            <li>
+              <span>Декор:</span>
+              <span>Без декору</span>
+            </li>
+            <li>
+              <span>Вага:</span>
+              <span>1 кг</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="cart-popup__item">
+        <button class="remove-btn cart-popup__remove">
+          <span class="sr-only">Видалити з кошика</span>
+        </button>
+        <img class="cart-popup__img" src="images/product/9.jpeg" alt="Наполеон" width="286" height="300">
+        <div class="cart-popup__content-box">
+          <div class="cart-popup__name">Торт “Наполеон”</div>
+          <ul class="cart-popup__list">
+            <li>
+              <span>Вид:</span>
+              <span>Карамельний наполеон</span>
+            </li>
+            <li>
+              <span>Декор:</span>
+              <span>Без декору</span>
+            </li>
+            <li>
+              <span>Вага:</span>
+              <span>1 кг</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+    <div class="cart-popup__box">
+      <div class="cart-popup__box-title">Ваше замовлення:</div>
+      <div class="cart-popup__order-price">
+        Сума замовлення:
+        <span>750 грн</span>
+      </div>
+      <div class="cart-popup__general">
+        Загальна сума:
+        <span>750 грн</span>
+      </div>
+      <a class="cart-popup__btn btn btn--dark" href="order.html">
+        <span>Оформити</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <section class="breadcrumbs">
+  <div class="container">
+    <h3 class="sr-only">Хлібні крихти</h3>
+    <div class="breadcrumbs__box">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">
+            Головна
+          </a>
+        </li>
+        
+        
+
+          
+
+          <li class="breadcrumbs__item">Каталог</li>
+      </ul>
+    </div>
+  </div>
+
+
+</section>
+
+
+    <div class="catalog">
+      <div class="container">
+        <h2 class="catalog__title title">Каталог</h2>
+        <ul class="catalog__filters filters">
+          <li class="filters__item">
+            <button class="filters__btn" type="button" data-filter=".cake">Торти</button>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button" data-filter=".pastry">Тістечка</button>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button" data-filter=".shou">Шу</button>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button" data-filter=".pizza">Піцца</button>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button" data-filter="all">Всі</button>
+          </li>
+        </ul>
+
+        <ul class="catalog__list">
+          <li class="catalog__item mix cake">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/6.jpeg alt="Мусовий торт “Манго-маракуйя”">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Мусовий торт “Манго-маракуйя”</a>
+        </h3>
+        <div class="item-card__price">1200 грн/ 3 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix cake">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/10.jpeg alt="Шоколадний торт з малиною">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Шоколадний торт з малиною</a>
+        </h3>
+        <div class="item-card__price">1000 грн/ 2 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix pastry">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/19.webp alt="Тарт Груша">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Тарт Груша</a>
+        </h3>
+        <div class="item-card__price">170 грн/ 1 шт</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix cake">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/11.jpeg alt="Торт “Ківі-маракуйя”">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Торт “Ківі-маракуйя”</a>
+        </h3>
+        <div class="item-card__price">1100 грн/ 1.5 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix cake">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/12.jpeg alt="Торт “Снікерс”">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Торт “Снікерс”</a>
+        </h3>
+        <div class="item-card__price">1400 грн/ 3 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix pizza">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/17.webp alt="Піца Гавайська">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Піца Гавайська</a>
+        </h3>
+        <div class="item-card__price">220 грн/ 1 шт</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix cake">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/9.jpeg alt="Торт “Наполеон”">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Торт “Наполеон”</a>
+        </h3>
+        <div class="item-card__price">1000 грн/ 2 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix cake">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/13.jpeg alt="Торт “Тіраміссу”">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Торт “Тіраміссу”</a>
+        </h3>
+        <div class="item-card__price">1350 грн/ 2 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix cake">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/14.jpeg alt="Торт “Медовик”">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Торт “Медовик”</a>
+        </h3>
+        <div class="item-card__price">800 грн/ 1,5 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix cake">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/15.jpeg alt="Торт “Вафельно-горіховий”">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Торт “Вафельно-горіховий”</a>
+        </h3>
+        <div class="item-card__price">1000 грн/ 2 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix cake">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/16.jpeg alt="Торт “Фісташка-малина”">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Торт “Фісташка-малина”</a>
+        </h3>
+        <div class="item-card__price">1350 грн/ 2 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix cake">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/18.webp alt="Київський">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Київський</a>
+        </h3>
+        <div class="item-card__price">1300 грн/ 1 кг</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix shou">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/2.jpeg alt="Тістечка Шу">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Тістечка Шу</a>
+        </h3>
+        <div class="item-card__price">400 грн/ 6 шт</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix pizza">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/4.jpeg alt="Піцца з лососем">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Піцца з лососем</a>
+        </h3>
+        <div class="item-card__price">320 грн/ 1 шт</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+          <li class="catalog__item mix pastry">
+            <article class="item-card">
+  <div class="item-card__inner">
+    <a href="product.html" class="btn item-card__details">Детальніше</a>
+    <img class="item-card__img" src=images/product/20.jpeg alt="Тарта ягідна">
+    <div class="item-card__info">
+      <div class="item-card__box">
+        <h3 class="item-card__name">
+          <a href="product.html">Тарта ягідна</a>
+        </h3>
+        <div class="item-card__price">165 грн/ 1 шт</div>
+      </div>
+      <button class="item-card__cart" type="button">
+        <img src="images/cart.svg" alt="Іконка корзини" width="25" height="25">
+        <span class="sr-only">Додати до кошика</span>
+      </button>
+    </div>
+  </div>
+</article>
+          </li>
+
+        </ul>
+
+        <div class="pagination">
+  <span class="nav-arrow nav-arrow--disabled">
+    <span class="sr-only">Попередня сторінка</span>
+  </span>
+
+  <ul class="pagination__list">
+    <li class="pagination__item">
+      <a class="pagination__link pagination__link--active" href="#">1</a>
+    </li>
+    <li class="pagination__item">
+      <a class="pagination__link" href="#">2</a>
+    </li>
+    <li class="pagination__item">
+      <a class="pagination__link" href="#">3</a>
+    </li>
+  </ul>
+
+
+  <a class="nav-arrow nav-arrow--next" href="#">
+    <span class="sr-only">Наступна сторінка</span>
+  </a>
+</div>
+      </div>
+    </div>
+
+
+  </main>
+  <footer id="contact" class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <div class="footer__info-item">с. Хотів, вул. Партизанська 1А</div>
+        <div class="footer__info-item">Email: <a class="footer__info-link"
+            href="mailto:kostromaganna@gmail.com">kostromaganna@gmail.com</a>
+        </div>
+        <div class="footer__info-item">Tel: <a class="footer__info-link" href="tel:380999876240">+38(099) 987 62 40</a>
+        </div>
+      </div>
+
+      <a class="logo footer__logo" href="#">
+        <img class="logo__img" src="images/logo.png" alt="Лого" width="255" height="201">
+      </a>
+
+      <div class="footer__box">
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com/grann.ua/" target="_blank">
+              <img src="images/social/instagram.svg" alt="instagram" width="34" height="34">
+              <span class="sr-only">Instagram</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank">
+              <img src="images/social/telegram.svg" alt="Telegram" width="34" height="34">
+              <span class="sr-only">Telegram</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank">
+              <img src="images/social/viber.svg" alt="Viber" width="34" height="34">
+              <span class="sr-only">Viber</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Політика конфіденційності</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Договір оферти</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
